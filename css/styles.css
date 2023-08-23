@@ -1,0 +1,92 @@
+/* Importing fonts
+    Karla - weights: 400, 700 */
+
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+:root {
+  --light-grey: hsl(204, 43%, 93%);
+  --greyish-blue: hsl(218, 22%, 67%);
+  --cyan: hsl(179, 62%, 43%);
+  --darker-cyan: rgba(74, 190, 189, 255);
+  --bright-yellow: hsl(71, 73%, 54%);
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--light-grey);
+  font-family: "Karla", sans-serif;
+}
+
+.parent-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.community-container {
+  grid-column-start: 1;
+  grid-column-end: span 2;
+  background-color: white;
+  padding: 6%;
+}
+
+.community-container h1 {
+  color: var(--cyan);
+}
+
+.community-container h2 {
+  color: var(--bright-yellow);
+  font-size: 1.4rem;
+}
+
+.community-container p {
+  color: var(--greyish-blue);
+  font-size: 1rem;
+  line-height: 1.4rem;
+}
+
+.subscription-container {
+  background-color: var(--cyan);
+  color: white;
+  padding: 10%;
+}
+
+.subscription-container button {
+  border: none;
+  padding: 3% 15%;
+  background-color: var(--bright-yellow);
+  color: white;
+  font-size: 1.2rem;
+}
+
+.subscription-container h2 {
+  font-size: 1.3rem;
+}
+
+.subscription-container .price-span {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.subscription-container .month-span {
+  color: var(--light-grey);
+}
+
+.subscription-container span {
+  font-size: 1.1rem;
+}
+
+.why-container {
+  background-color: var(--darker-cyan);
+  padding: 10%;
+}
+
+.why-container h2 {
+  color: white;
+}
+
+.why-container p {
+  color: var(--light-grey);
+}
