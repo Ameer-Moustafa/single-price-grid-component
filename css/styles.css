@@ -23,7 +23,6 @@ body {
 .parent-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  box-shadow: 1px 1px 15px 0px rgba(0, 0, 0, 0.38);
 }
 
 .community-container {
@@ -71,7 +70,7 @@ body {
   background-color: var(--bright-yellow);
   color: white;
   font-size: 1.1rem;
-  box-shadow: 1px 1px 15px 0px rgba(0, 0, 0, 0.38);
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.14);
 }
 
 .subscription-container h2 {
