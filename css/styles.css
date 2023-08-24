@@ -29,64 +29,120 @@ body {
   grid-column-start: 1;
   grid-column-end: span 2;
   background-color: white;
-  padding: 6%;
+  padding: 4% 6% 0% 6%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .community-container h1 {
   color: var(--cyan);
+  font-size: 1.7rem;
 }
 
 .community-container h2 {
+  margin-top: 4%;
   color: var(--bright-yellow);
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 .community-container p {
   color: var(--greyish-blue);
   font-size: 1rem;
   line-height: 1.4rem;
+  margin-bottom: 10%;
 }
 
 .subscription-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: var(--cyan);
   color: white;
-  padding: 10%;
+  padding: 10% 15% 8% 12%;
+  border-bottom-left-radius: 10px;
 }
 
 .subscription-container button {
+  margin-bottom: 10%;
   border: none;
-  padding: 3% 15%;
+  border-radius: 5px;
+  padding: 5% 1%;
   background-color: var(--bright-yellow);
   color: white;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 .subscription-container h2 {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 .subscription-container .price-span {
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: 700;
 }
 
 .subscription-container .month-span {
   color: var(--light-grey);
+  font-size: 1rem;
+  margin-left: 5%;
 }
 
-.subscription-container span {
-  font-size: 1.1rem;
+.subscription-container .access-span {
+  font-size: 1rem;
+  margin-top: -12%;
+}
+
+.price-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: -6%;
 }
 
 .why-container {
   background-color: var(--darker-cyan);
-  padding: 10%;
+  padding: 10% 15% 8% 12%;
+  border-bottom-right-radius: 10px;
 }
 
 .why-container h2 {
   color: white;
+  font-size: 1.2rem;
 }
 
 .why-container p {
   color: var(--light-grey);
+  line-height: 1.4rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .community-container {
+    padding: 4% 1% 0% 6%;
+  }
+  .subscription-container {
+    grid-column-start: 1;
+    grid-column-end: span 2;
+    padding: 10% 8% 8% 8%;
+    border-bottom-left-radius: 0px;
+  }
+
+  .why-container {
+    grid-column-start: 1;
+    grid-column-end: span 2;
+    padding: 10% 8% 8% 8%;
+    border-bottom-left-radius: 10px;
+  }
+
+  .subscription-container .access-span {
+    margin-top: 0%;
+  }
+
+  .price-container {
+    margin-top: 0%;
+  }
+
+  .subscription-container button {
+    margin-bottom: 0%;
+    margin-top: 10%;
+  }
 }
