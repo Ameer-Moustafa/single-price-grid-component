@@ -29,7 +29,7 @@ body {
   grid-column-start: 1;
   grid-column-end: span 2;
   background-color: white;
-  padding: 4% 6% 0% 6%;
+  padding: 1rem 2rem 0rem 3rem;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
@@ -40,7 +40,7 @@ body {
 }
 
 .community-container h2 {
-  margin-top: 4%;
+  margin-top: 1rem;
   color: var(--bright-yellow);
   font-size: 1.2rem;
 }
@@ -49,7 +49,7 @@ body {
   color: var(--greyish-blue);
   font-size: 1rem;
   line-height: 1.4rem;
-  margin-bottom: 10%;
+  margin-bottom: 2.5rem;
 }
 
 .subscription-container {
@@ -58,15 +58,15 @@ body {
   justify-content: space-between;
   background-color: var(--cyan);
   color: white;
-  padding: 10% 15% 8% 12%;
+  padding: 2rem 3rem 1rem 2rem;
   border-bottom-left-radius: 10px;
 }
 
 .subscription-container button {
-  margin-bottom: 10%;
+  margin-bottom: 1.5rem;
   border: none;
   border-radius: 5px;
-  padding: 5% 1%;
+  padding: 1rem 2rem;
   background-color: var(--bright-yellow);
   color: white;
   font-size: 1.1rem;
@@ -85,19 +85,19 @@ body {
 .subscription-container .month-span {
   color: var(--light-grey);
   font-size: 1rem;
-  margin-left: 5%;
+  margin-left: 1rem;
 }
 
 .subscription-container .access-span {
   font-size: 1rem;
-  margin-top: -12%;
+  margin-top: -2rem;
 }
 
 .price-container {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-top: -6%;
+  margin-top: -1rem;
 }
 
 .why-container {
